@@ -43,6 +43,7 @@ cronitor.schedule("mydplJ", "0 0 * * *", async () => {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.static("dist"));
 
 // authentication
 app.post("/instructor_login", handleInstructorLogin); // handle instructor login
