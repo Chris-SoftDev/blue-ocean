@@ -14,7 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   // const API = "http://localhost:3000";
-  const API = "https://blue-ocean-sigma.vercel.app/";
+  const API = "https://education-elevate.onrender.com";
 
   const navigate = useNavigate();
   const { login, setInstructorId, setInstructorLoggedIn } = useContext(AuthContext);

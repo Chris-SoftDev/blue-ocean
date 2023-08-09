@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   const [instructorLoggedIn, setInstructorLoggedIn] = useState(false)
 
   // const fetchUrl = "http://localhost:3000"; //Change once deployed or for testing
-  const fetchUrl = "https://blue-ocean-sigma.vercel.app/";
+  const fetchUrl = "https://education-elevate.onrender.com";
 
   const login = (token) => {
     setAccessToken(token.accessToken);

@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
 
 // const fetchUrl = `http://localhost:${process.env.PORT}`;
-const fetchUrl = "https://blue-ocean-sigma.vercel.app/";
+const fetchUrl = "https://education-elevate.onrender.com";
 
 export const handleLogin = async (req, res) => {
     // pull all students from database
