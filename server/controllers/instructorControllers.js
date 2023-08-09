@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./server/.env" });
 
 const fetchUrl = `http://localhost:${process.env.PORT}`;
-// const fetchUrl = "https://education-elevate.onrender.com";
 
 export const handleLogin = async (req, res) => {
     // pull all instructors from database

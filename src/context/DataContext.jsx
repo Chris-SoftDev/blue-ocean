@@ -22,8 +22,7 @@ export const DataProvider = ({ children }) => {
   const [analyticsButtonClicked, setAnalyticsButtonClicked] = useState(false)
   const [cohortAssessments, setCohortAssessments] = useState([]) //16
 
-  // const fetchUrl = "http://localhost:3000"; //Change once deployed or for testing
-  const fetchUrl = "https://education-elevate.onrender.com";
+  const fetchUrl = "http://localhost:3000"; //Change once deployed or for testing
 
   const toggleThemeMode = () => {
     setIsDarkModeActive(!isDarkModeActive);

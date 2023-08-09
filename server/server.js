@@ -24,10 +24,9 @@ dotenv.config({ path: "./server/.env" });
 const { Pool } = pg;
 const db = new Pool({
     connectionString: process.env.POSTGRES_URL,
-    // connectionString: process.env.POSTGRES_URL,
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 const cronitor = cron();

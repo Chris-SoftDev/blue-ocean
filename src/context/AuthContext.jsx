@@ -11,8 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [instructor, setInstructor] = useState([]);
   const [instructorLoggedIn, setInstructorLoggedIn] = useState(false)
 
-  // const fetchUrl = "http://localhost:3000"; //Change once deployed or for testing
-  const fetchUrl = "https://education-elevate.onrender.com";
+  const fetchUrl = "http://localhost:3000"; //Change once deployed or for testing
 
   const login = (token) => {
     setAccessToken(token.accessToken);

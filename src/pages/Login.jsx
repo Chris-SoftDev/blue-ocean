@@ -13,8 +13,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // const API = "http://localhost:3000";
-  const API = "https://education-elevate.onrender.com";
+  const API = "http://localhost:3000";
 
   const navigate = useNavigate();
   const { login, setInstructorId, setInstructorLoggedIn } = useContext(AuthContext);
