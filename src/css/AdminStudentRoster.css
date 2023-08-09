@@ -1,0 +1,78 @@
+.student-roster-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 40px;
+}
+
+.student-roster-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.student-roster-qty {
+    font-size: 14px;
+    color: var(--content-container-text);
+}
+
+.student-roster-header-utils {
+    display: flex;
+}
+
+.student-roster-search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 12px;
+    background-color: var(--student-roster-search-background);
+    border-radius: 10px;
+}
+
+.student-roster-search-container input {
+    width: 220px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: var(--student-roster-search-background);
+    color: var(--search-placeholder-text);
+}
+
+.student-roster-search-container i {
+    color: var(--search-placeholder-text);
+    cursor: pointer;
+}
+
+.student-roster-dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    height: 38px;
+    border: 1px solid var(--search-placeholder-text);
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.student-roster-dropdown-container i {
+    color: var(--search-placeholder-text);
+}
+
+.student-roster-dropdown-cohort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--search-placeholder-text);
+    font-size: 13px;
+}
+
+.student-roster-dropdown-cohort-term {
+    font-size: 11px;
+}

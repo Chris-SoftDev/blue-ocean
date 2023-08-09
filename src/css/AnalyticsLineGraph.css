@@ -1,0 +1,103 @@
+.analytics-line-graph-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+}
+
+.line-graph-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+}
+
+.line-graph-header h1 {
+    margin-bottom: 1em;
+}
+
+.line-graph-legend-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5em;
+
+}
+
+.nps-legend-container {
+    display: flex;
+    margin-right: 5em;
+}
+
+.nps-circle {
+    background-color: var(--absences-icon-background) !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: .5em;
+    margin-top: .2em;
+}
+
+.nps-title {
+    font-size: 20px;
+}
+
+.grade-legend-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.grade-circle {
+    background-color: var(--attendees-icon-background) !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: .5em;
+    margin-top: .2em;
+}
+
+.grade-title {
+    font-size: 20px;
+}
+
+.line-graph {
+    width: 900px;
+    margin-left: 5em;
+    margin-top: 3em;
+}
+
+.linegraph-dropdown-container {
+    display: flex;
+    width: 182px;
+    height: 38px;
+    border: 1px solid var(--search-placeholder-text);
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.linegraph-dropdown-container i {
+    color: var(--search-placeholder-text);
+    margin-top: .6em;
+}
+
+.linegraph-dropdown-cohort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--search-placeholder-text);
+    font-size: 13px;
+    margin-left: 1.5em;
+}
+
+.linegraph-dropdown-cohort-term {
+    font-size: 11px;
+}
+
+.caret {
+    margin-left: 1.3em;
+    font-size: 15px;
+    margin-bottom: .2em;
+}

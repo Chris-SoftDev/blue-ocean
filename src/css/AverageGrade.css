@@ -1,0 +1,89 @@
+.avg-grade-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.avg-grade-header p {
+    font-size: 22px;
+}
+
+.month-btn {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    /* border: .5px solid var(--alt-text);
+    color:var(--alt-text); */
+    border: .5px solid var(--search-placeholder-text);
+    color:var(--search-placeholder-text);
+    border-radius: 10px;
+}
+
+.month-btn:hover {
+    cursor: pointer;
+    background-color: var(--hover-background);
+}
+
+.btn-title{
+    font-size: 13px;
+    margin-top: .3em;
+    padding-left: .5em;
+}
+
+.month-btn i{
+    margin-left: 1em;
+    margin-top: .3em;
+    padding-right: .3em;
+}
+
+.pie {
+    margin-top: -2.5em;
+}
+
+.legend-container {
+    display: flex;
+    margin-top: -6em;
+    margin-left: .6em;
+}
+
+.legend-circle {
+    background-color: #6359e9;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: .5em;
+    margin-top: .75em;
+}
+
+.legend-title{
+    margin-right: 1em;
+    margin-top: .6em;
+}
+
+.activity-btn-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border: .5px solid var(--alt-text);
+    color:var(--alt-text); */
+    border: .5px solid var(--search-placeholder-text);
+    color:var(--search-placeholder-text);
+    border-radius: 10px;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.activity-btn-container:hover {
+    cursor: pointer;
+    background-color: var(--hover-background);
+}
+
+.arrow {
+    margin-left: 1em;
+    margin-top: -.35em;
+    font-size: 25px;
+}

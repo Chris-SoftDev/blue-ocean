@@ -1,0 +1,178 @@
+.bottom-div {
+    height: 40px;
+    background-color: var(--messages-div-background);
+    display: flex;
+}
+
+.chat-div {
+    height: 400px;
+    width: 300px;
+    background-color: var(--container-background);
+    padding: 0.5rem;
+    overflow-y: scroll;
+    border: 1px solid var(--container-background);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+.dropdown-icon {
+    margin-top: 0.35rem;
+    margin-left: 0.4rem;
+    margin-right: 1rem;
+    color: var(--text);
+}
+
+.instructor-bubble {
+    display: flex;
+    width: 200px;
+    justify-content: right;
+}
+
+.instructor-content {
+    color: black;
+    background-color: rgb(233, 233, 233);
+    width: max-content;
+    max-width: 180px;
+    border-radius: 12px;
+    padding: 0.4rem;
+    text-align: left;
+}
+
+.instructor-name-div {
+    font-size: 12px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.instructor-sent {
+    color: var(--text);
+    font-size: 10px;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+}
+
+.instructor-triangle {
+    width: 0px;
+    height: 0px;
+    margin-top: 0.7rem;
+    border-left: 5px solid rgb(233, 233, 233);
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(233, 233, 233);
+    border-bottom: 5px solid transparent;
+}
+
+.messages {
+    margin-left: 1rem;
+}
+
+.messages2 {
+    margin-left: 1.5rem;
+}
+
+.messages-div {
+    color: var(--text);
+    background-color: var(--messages-div-background);
+    height: 35px;
+    width: 150px;
+    justify-content: center;
+    line-height: 1.9rem;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    margin-right: 2rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.messages-div2 {
+    color: var(--text);
+    background-color: var(--messages-div-background);
+    height: 35px;
+    width: 300px;
+    justify-content: center;
+    line-height: 1.9rem;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.message-input {
+    height: 30px;
+    width: 230px;
+    background-color: white;
+    border-color: transparent;
+    padding: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    border-radius: 8px;
+}
+
+.popup-div {
+    width: 300px;
+    margin-right: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    align-self: flex-end;
+    animation-name: pop-up;
+    animation-duration: 0.5s;
+}
+
+@keyframes pop-up {
+    from {max-height: 0px;}
+    to {max-height: 475px;}
+}
+
+.send-icon {
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.student-bubble {
+    display: flex;
+    width: 200px;
+}
+
+.student-content {
+    color: var(--text);
+    background-color: var(--messages-div-background);
+    max-width: 180px;
+    border-radius: 12px;
+    padding: 0.4rem;
+}
+
+.student-name-div {
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.student-sent {
+    color: var(--text);
+    font-size: 10px;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.student-triangle {
+    width: 0px;
+    height: 0px;
+    margin-top: 0.7rem;
+    border-left: 5px solid transparent;
+    border-right: 5px solid var(--absences-icon-background);
+    border-top: 5px solid var(--absences-icon-background);
+    border-bottom: 5px solid transparent;
+}

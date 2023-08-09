@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: var(--app-background);
+}
+
+#root {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dark {
+  --background: #0c0c0f;
+  --app-background: #141332 ;
+  --container-background: #1d1d41;
+  --search-background: #1d1d41;
+  --hover-background: #6359e9;
+  --alt-hover-background: #64cff6;
+  --content-container-text: #8c89b4;
+  --search-placeholder-text: #aeabd8;
+  --student-roster-search-background: #27264e;
+  --cohort-selection-background: #6359e9;
+  --text: #f5f5fa;
+  --alt-text: #a6a6a6;
+  --container-alt: #7873c125;
+  --dropdown-hover: #c8c5ec55;
+  --attendees-background: rgba(2, 177, 90, .15);
+  --attendees-text: #02b15a;
+  --attendees-icon-background: #2abdf3;
+  --absences-background: rgba(235, 0, 27, .15);
+  --absences-text: #eb010b;
+  --absences-icon-background: #6359e9;
+  --student-roster-header: #aeabd8;
+  --messages-div-background: #6359e9;
+  --roster-table-header-hover: #2abdf3;
+  --roster-table-name-hover: #2abdf3;
+}
+
+.light {
+  --background: #0c0c0f;
+  --app-background: #f6f5f7;
+  --container-background: #f1eff1;
+  --search-background: #dadada;
+  --hover-background: #dadada;
+  --alt-hover-background: #64cff6;
+  --content-container-text: #8c89b4;
+  --search-placeholder-text: #0c0c0f;
+  --student-roster-search-background: #dadada;
+  --cohort-selection-background: #f1eff1;
+  --text: #0c0c0f;
+  --alt-text: #a6a6a6;
+  --attendees-background: rgba(2, 177, 90, .15);
+  --attendees-text: #02b15a;
+  --attendees-icon-background: #64cff6af;
+  --absences-background: rgba(235, 0, 27, .15);
+  --absences-text: #eb010b;
+  --absences-icon-background: #6359e96c;
+  --student-roster-header: #a6a6a6;
+  --container-alt: #908dba2d;
+  --dropdown-hover: #afacde;
+  --messages-div-background: #aba6e7;
+  --roster-table-header-hover: #2abdf3;
+  --roster-table-name-hover: #2abdf3;
+}
+
+::placeholder {
+  color: var(--search-placeholder-text);
+}
+
+*:focus {
+  outline: none;
+}

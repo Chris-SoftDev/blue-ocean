@@ -1,0 +1,323 @@
+/*-----Student Sidebar css-------*/
+.student-dashboard-container {
+    display: flex;
+    max-width: 1640px;
+    width: 100%;
+    height: 100%;
+}
+
+.student-dashboard-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 365px;
+    min-height: 926px;
+    background-color: var(--container-background);
+    border-radius: 0 30px 30px 0;
+    padding: 10px 25px 50px 25px;
+}
+
+.student-dashboard-content-container{
+    min-width: 1180px;
+    background-color: var(--app-background);
+    padding: 30px 30px 10px 30px;
+}
+
+/*Content for student page*/
+.student-content-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 60px;
+    /* border: black 1px solid */
+}
+
+.student-content-header-greeting-title {
+    font-size: 26px;
+    font-weight: 400;
+    
+}
+
+.student-content-header-greeting-message {
+    padding-top: 5px;
+    color: var(--alt-text);
+}
+
+.student-content-header-search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 450px;
+    height: 45px;
+    padding: 15px;
+    background-color: var(--container-background);
+    border-radius: 10px;
+}
+
+.student-content-header-search-container input {
+    width: 400px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: var(--container-background);
+    color: var(--search-placeholder-text);
+    
+}
+
+.student-content-header-search-container i {
+    cursor: pointer;
+}
+
+.student-content-main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 910px;
+    
+}
+
+.student-content-main-left-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    
+}
+
+.student-content-main-right-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 390px;
+}
+
+
+.student-content-main-student-roster-container {
+    width: 100%;
+    height: auto;
+    padding: 15px 25px;
+    background-color: var(--container-background);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.roster-header {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.roster-message {
+    padding-top: 5px;
+    color: var(--alt-text);
+}
+
+.roster-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 210px;
+    height: 100%;
+    padding: 15px;
+    background-color: var(--container-alt);
+    border-radius: 10px;
+    margin-left: 90px;
+}
+
+.roster-search input {
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: var(--alt-container);
+    color: var(--search-placeholder-text);
+}
+
+.class-drop {
+    width: 175px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.266);
+    margin-left: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--search-placeholder-text);
+    background-color: rgba(88, 55, 164, 0.036);
+    padding: 7px;
+    /* cursor: pointer; */
+}
+
+/* .class-drop:hover {
+    background-color: var(--dropdown-hover);
+    transition: ease-in-out 200ms;
+} */
+
+.drop-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-content-main-avg-grade {
+    display: flex;
+    width: 100%;
+    height: 480px;
+    padding: 15px 25px;
+    background-color: var(--container-background);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.student-roster-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*Name category container for student roster*/
+.name-ctg {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 240px;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+}
+
+.name-txt {
+    color: var(--search-placeholder-text);
+    padding-bottom: 25px;
+}
+
+.avtr-name-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.avtr {
+width: 50px;
+height: 50px;
+border-radius: 25px;
+background-color: bisque;
+}
+
+.student-name {
+    display: flex;
+    align-self: center;
+    margin-left: 35px
+}
+
+.student-name span:hover {
+    cursor: pointer;
+    font-weight: bold;
+    transition: ease-in-out 100ms;
+}
+/*End of student name category container*/
+
+/*Last login container*/
+
+.last-login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 210px;
+    margin-top: 40px;
+}
+
+.last-login-ctg{
+    color: var(--search-placeholder-text);
+    padding-bottom: 25px;
+}
+
+.last-login-txt {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/*End of last-login container*/
+
+/*Student status(absent or present) container*/
+
+/* .student-status {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 210px;
+    margin-top: 40px;
+    
+}
+
+.status-ctg {
+    color: var(--search-placeholder-text);
+    padding-bottom: 25px;
+}
+
+.status-pill-present {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid pink; 
+    background-color: rgba(40, 232, 40, 0.302);
+    border-radius: 25px;
+} */
+
+/*Average grade container content css*/
+
+.avg-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+}
+
+.avg-dropdown {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.266);
+    width: 90px;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-around;
+    color: var(--search-placeholder-text);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.avg-dropdown:hover {
+    background-color: var(--dropdown-hover);
+    transition: ease-in-out 200ms;
+}
+
+.activity-btn {
+    height: 50px;
+    width: 100%;
+    border: .5px solid rgba(255, 255, 255, 0.266);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--text);
+    background-color: var(--container-alt);
+
+}
+
+.activity-btn:hover {
+    background-color: var(--dropdown-hover);
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.student-dashboard-content-container{
+    min-width: 1180px;
+    background-color: var(--app-background);
+    padding: 30px 30px 10px 30px;
+}

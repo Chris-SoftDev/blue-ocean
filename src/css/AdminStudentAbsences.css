@@ -1,0 +1,39 @@
+.student-absences-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--absences-icon-background);
+}
+
+.student-absences-icon i {
+    rotate: -45deg;
+}
+
+.student-absences-main-title {
+    font-size: 17px;
+    color: var(--content-container-text);
+}
+
+.student-absences-main-info {
+    font-size: 25px;
+}
+
+.student-absences-statistics-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.student-absences-statistics {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 72px;
+    font-size: 13px;
+    padding: 5px 20px;
+    color: var(--absences-text);
+    background-color: var(--absences-background);
+    border-radius: 20px;
+}

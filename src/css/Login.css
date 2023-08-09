@@ -1,0 +1,94 @@
+.login-bg {
+ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-image: url('../assets/mountain.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    z-index: 999; 
+}
+.sign-in-container {
+    width: 400px;
+    height: 450px;
+    background-color: rgba(204, 227, 246, .85);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+    line-height: 1.5;
+    position: absolute;
+    left: 42%;
+    top: 25%;
+    color: black
+}
+
+.sign-head {
+    display: flex;
+    flex-direction: start;
+    margin-left: 15px
+}
+
+.sign-in {
+    display: flex;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-left: 15px;
+    
+}
+
+.username, .password {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.forgot {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.f-text:hover, .register:hover {
+    color:blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sub-btn {
+    display: flex;
+    margin-top: 10px;   
+}
+
+.register {
+    display: flex;
+    padding: 20px;
+}
+
+.sub-btn {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #e5e5f8;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  .sub-btn:hover {
+    border-color: #2c2c39;
+  }
+  .sub-btn:focus,
+  .sub-bbtn:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  

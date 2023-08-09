@@ -1,0 +1,21 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules
+
+stages:
+  - build
+  #- deploy
+
+app-build:
+  stage: build
+  script:
+    - cd education-elevate
+    - npm install
+    - npm run build
+
+# app-deploy:
+#   stage: deploy
+#   rules:
+#     - when: manual

@@ -1,0 +1,36 @@
+.analytics-container {
+    margin: auto;
+    max-width: 600px;
+}
+
+.analytics-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+
+.analytics-title {
+    margin-bottom: 1em;
+    margin-left: -1.5em;
+}
+
+.chart-legend-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: -1.5em;
+}
+
+.legend-circle {
+    background-color: var(--absences-icon-background) !important;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: .5em;
+    margin-top: .75em;
+}
+
+.legend-title{
+    margin-right: 1em;
+    margin-top: .6em;
+}

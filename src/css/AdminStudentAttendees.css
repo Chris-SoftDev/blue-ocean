@@ -1,0 +1,39 @@
+.student-attendees-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--attendees-icon-background);
+}
+
+.student-attendees-icon i {
+    rotate: -45deg;
+}
+
+.student-attendees-main-title {
+    font-size: 17px;
+    color: var(--content-container-text);
+}
+
+.student-attendees-main-info {
+    font-size: 25px;
+}
+
+.student-attendees-statistics-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.student-attendees-statistics {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 72px;
+    font-size: 13px;
+    padding: 5px 20px;
+    color: var(--attendees-text);
+    background-color: var(--attendees-background);
+    border-radius: 20px;
+}

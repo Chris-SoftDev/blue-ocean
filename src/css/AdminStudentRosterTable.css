@@ -1,0 +1,114 @@
+.student-roster-table-container table {
+    width: 100%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.student-roster-table-container th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--student-roster-header);
+    padding-bottom: 25px;
+}
+
+.student-roster-table-container th:hover {
+    color: var(--roster-table-header-hover);
+}
+
+.student-roster-table-container tr {
+    vertical-align: middle;
+}
+
+.student-roster-table-container td {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-bottom: 25px;
+}
+
+.student-roster-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.student-roster-profile-pic {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #eae5fa;
+}
+
+.student-roster-profile-pic img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.student-roster-name {
+    margin-left: 15px;
+    width: 160px;
+}
+
+.student-roster-name:hover {
+    color: var(--roster-table-name-hover);
+    cursor: pointer;
+}
+
+.student-roster-average-grade {
+    width: 80px;
+    text-align: center;
+}
+
+.student-roster-status {
+    width: 70px;
+}
+
+.student-roster-present {
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 5px;
+    color: var(--attendees-text);
+    background-color: var(--attendees-background);
+    border-radius: 10px;
+}
+
+.student-roster-absent {
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 5px;
+    color: var(--absences-text);
+    background-color: var(--absences-background);
+    border-radius: 10px;
+}
+
+.student-roster-pagination-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.student-roster-pagination-container button {
+    border: none;
+    outline: none;
+    color: var(--text);
+    background-color: transparent;
+}
+
+.student-roster-pagination-container button:hover {
+    color: var(--roster-table-header-hover);
+    cursor: pointer;
+}
+
+.student-roster-pagination-container button:disabled {
+    visibility: hidden;
+}
+
+.student-roster-pagination-container span {
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    color: var(--search-placeholder-text);
+    background-color: var(--student-roster-search-background);
+}

@@ -1,0 +1,148 @@
+$primary-color: #141332;
+$secondary-color: #1d1d41;
+$light-color: rgba(111, 142, 196, 255);
+$dark-color: rgba(28, 53, 110, 255);
+* {
+  color: white;
+}
+.dansContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.studentInfoContainer {
+  background-color: #1d1d41;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  padding: 3%;
+  ul {
+    margin-bottom: 30%;
+  }
+  li {
+    margin-top: 30%;
+    list-style: none;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    letter-spacing: 1px;
+  }
+}
+.studentInfo {
+  display: flex;
+}
+
+#studentName {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1d1d41;
+  height: 50%;
+  width: 50%;
+  opacity: 96%;
+  border-radius: 2%;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  animation-duration: 0.5s;
+  animation-name: expand;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+  h2 {
+    padding-top: 3%;
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    &:hover {
+      opacity: 70%;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}
+
+#infoDivider {
+  // transition: background-color 0.5s;
+  &:hover {
+    transform: translateY(-3px);
+    // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    // background-color: darken(#1d1d41, 3%);
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-image: linear-gradient(to right, #0807142a, #1d1d4143);
+    // transition: width 0.5s;
+  }
+
+  &:hover::before {
+    width: 100%;
+    animation: fill-background .5s linear forwards;
+  }
+}
+
+@keyframes fill-background {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+// body{
+//   color: #e1e1e8;
+// }
