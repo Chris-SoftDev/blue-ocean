@@ -23,7 +23,7 @@ dotenv.config({ path: "./server/.env" });
 
 const { Pool } = pg;
 const db = new Pool({
-    connectionString: process.env.POSTGRES_URL + "?sslmode=require",
+    connectionString: process.env.POSTGRES_URL,
     // connectionString: process.env.POSTGRES_URL,
 });
 
