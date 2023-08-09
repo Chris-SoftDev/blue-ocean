@@ -1,6 +1,3 @@
-const allowedOrigins = [
-    "http://localhost:3000",
-    "http://localhost:5173"
-]
+const allowedOrigins = ["http://localhost:3000", "http://localhost:5173", "https://education-elevate.onrender.com"];
 
-export default allowedOrigins
+export default allowedOrigins;
